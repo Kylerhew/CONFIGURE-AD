@@ -6,7 +6,7 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
+
 
 
 
@@ -24,10 +24,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1 - Create resource group in azure.
+- Step 2 - Create Virtual Network and Subnet.
+- Step 3 - Create Domain Controller.
+- Step 4 - Set Domain Controller's NIC Private IP address to be static
+- step 5 - Disable Windows Firewall for testing connectivity.
+- step 6 - Setting up a client in Azure. 
 
 <h2>Deployment and Configuration Steps</h2>
 
