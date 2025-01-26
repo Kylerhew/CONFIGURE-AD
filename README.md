@@ -147,15 +147,21 @@ First things firt, we need to disable the Firewall to test proper connectivety. 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qn8WXzP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Back in the Azure portal go to your VMs and select client1 and obtain public IP adress, RDP into Client1 nad bring up the Powershell. 
+Control Panel ( start Menu) > Windows Powershell. Run command ping 10.0.0.4 and if your FirewaLL In dc-1 was set correctly then you should get a reply. 
 </p>
 <br />
 
-
-
+<p>
+<img src="https://i.imgur.com/qZfL2X5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+In Windows Powershell run command ipconfig /all and look at the DNS server it should read 10.0.0.4 indicating that client1 is routing through its domain controller which is dc-1. If so you set up the Active Directory network properly and further configuration is possible for NSGs ( Network Security Groups) 
+</p>
+<br />
 
 
 
