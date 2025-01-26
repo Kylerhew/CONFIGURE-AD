@@ -107,10 +107,42 @@ Head back to dc-1 as we now have to set the NIC Private IP address to be stati. 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/79scoea.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Click on DNS server settings and under ipconfig change Private IP adrdress settings allocation from Dynamic to static. Then write in dc-1's private IP adress 10.0.0.4.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/scv1DFt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now go to Virtual machines and find the public IP address for dc-1 our Domain Controller and we will use this to RDP into the VM.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/HRXoXQ1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Pull up Remote Desktop from the control panel ( start menu) and put in dc-1's public IP adress and username and password we created earlier during setup.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/kBiJ1ln.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once the VM is started up and we are in and everything we have done up until this point has been done correectly we should see the server manager pop up.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/FISDJLb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+First things firt, we need to disable the Firewall to test proper connectivety. Right click the start menu, click run and promt "wf.msc" which will bring up the firewall. Click on Windows Firewall properties and turn off Fire Wall state. 
 </p>
 <br />
 
@@ -121,20 +153,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
 
 
 
